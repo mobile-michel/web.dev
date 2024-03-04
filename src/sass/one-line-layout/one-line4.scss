@@ -1,0 +1,24 @@
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+body > * {
+  padding: 2rem;
+}
+
+header {
+  background: lightpink;
+}
+
+main {
+  background: coral;
+}
+
+footer {
+  background: wheat;
+  text-align: center;
+}

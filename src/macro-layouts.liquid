@@ -1,0 +1,11 @@
+---
+title: Macro layouts
+layout: default
+tags: primary
+---
+<p>This is the {{ title }}</p>
+<ul>
+    {% for item in collections.webdev %}
+    <li><a href="{{item.url}}">{{item.data.title}}</a></li>
+    {% endfor %}
+</ul>

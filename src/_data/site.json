@@ -1,7 +1,8 @@
 {
     "name": "web.dev",
     "description": "Responsive design course on web.dev.",
-    "github": "https://web.dev/learn/design/welcome",
+    "github": "https://github.com/mobile-michel/web.dev",
+    "url": "https://web.dev/learn/design/welcome",
     "authorName": "Michel Maillard",
     "authorUrl": "https://michelmaillard.ch/",
     "favicon": "https://11ty.recipes/images/meta/favicon.svg",

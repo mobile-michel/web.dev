@@ -1,5 +1,7 @@
 ---
 title: Sidebar says
+description: The minmax() CSS function defines a size range greater than or equal to min and less than or equal to max. It is used with CSS Grids.
+code: "grid-template-columns: minmax(200px, 25%) 1fr;"
 css: /assets/css/one-line-layout/one-line3.css
 url: https://developer.mozilla.org/en-US/docs/Web/CSS/minmax
 ---
@@ -7,9 +9,5 @@ url: https://developer.mozilla.org/en-US/docs/Web/CSS/minmax
     <p>Min: 200px<br />Max: 25%</p>
 </aside>
 <main>
-    <h1>{{ title }}</h1>
-    <p><a href="{{ url }}">On MDN web docs</a></p>
-    <p>The minmax() CSS function defines a size range greater than or equal to min and less than or equal to max. It is used with CSS Grids.</p>
-    <h3>This example</h3>
-    <code>grid-template-columns: minmax(200px, 25%) 1fr;</code>
+    {% render 'components/main', title: title, description: description, url: url, code: code %}
 </main>

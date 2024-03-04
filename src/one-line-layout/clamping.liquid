@@ -1,12 +1,15 @@
 ---
 title: Clamping my style
-css: /assets/css/one-line9.css
+description: "The clamp() CSS function clamps a middle value within a range of values between a defined minimum bound and a maximum bound. The function takes three parameters: a minimum value, a preferred value, and a maximum allowed value."
+code: "width: clamp(45ch, 50%, 75ch);"
+image: https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+css: /assets/css/one-line-layout/one-line9.css
 ---
 <article>
-    <h1>Clamping my style</h1>
-    <figure></figure>
-    <p>The clamp() CSS function clamps a middle value within a range of values between a defined minimum bound and a maximum bound. The function takes three parameters: a minimum value, a preferred value, and a maximum allowed value.</p>
-    <code>clamp(&lt;min&gt;, &lt;actual&gt;, &lt;max&gt;)</code>
-    <h3>This example</h3>
-    <p>width: clamp(45ch, 50%, 75ch);</p>
+    <h1>{{ title }}</h1>
+    <figure>
+        <img src="{{ image }}" alt="Forest">
+        <figcaption>Bad Pyrmont, Deutschland.</figcaption>
+    </figure>
+    {% render 'components/main', description: description, code: code, url: url %}
 </article>

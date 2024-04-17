@@ -4,21 +4,21 @@
   "description": "Responsive design course on web.dev",
   "main": "eleventy.config.js",
   "scripts": {
-        "watch:eleventy": "npx @11ty/eleventy --serve",
-        "watch:sass": "npx sass src/sass:_site/assets/css --watch",
-        "start": "npm run watch:eleventy & npm run watch:sass",
-        "build": "sass src/sass:_site/assets/css --style=compressed && eleventy",
-        "debug": "DEBUG=* eleventy"
+    "watch:eleventy": "npx @11ty/eleventy --serve",
+    "watch:sass": "npx sass src/sass:_site/assets/css --watch",
+    "start": "npm run watch:eleventy & npm run watch:sass",
+    "build": "sass src/sass:_site/assets/css --style=compressed && eleventy",
+    "build-gp": "sass src/sass:_site/assets/css --style=compressed && eleventy --pathprefix='web.dev'"
   },
   "keywords": [
     "eleventy",
     "liquid",
     "web.dev"
-],
+  ],
   "author": "Michel Maillard",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-        "sass": "^1.71.1"
+    "sass": "^1.75.0"
   }
 }
